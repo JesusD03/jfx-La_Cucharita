@@ -12,7 +12,7 @@
    <children>
       <MenuBar>
         <menus>
-          <Menu mnemonicParsing="false" text="Module">
+          <Menu mnemonicParsing="false" text="Employee Modules">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#OpenEmployees" text="Employees Module" />
               <MenuItem mnemonicParsing="false" onAction="#OpenInventory" text="Inventary Module" />
@@ -20,16 +20,22 @@
                   <MenuItem mnemonicParsing="false" onAction="#openOrderModule" text="Order Module" />
             </items>
           </Menu>
-            <Menu mnemonicParsing="false" text="About">
+            <Menu mnemonicParsing="false" text="Customer Modules">
               <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" onAction="#openMenu" text="Menu" />
+                  <MenuItem mnemonicParsing="false" onAction="#openCart" text="CART" />
               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Exit">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#logOut" text="Log out" />
+               </items>
             </Menu>
         </menus>
       </MenuBar>
       <Pane fx:id="mainPane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: white;">
          <children>
-            <ImageView fitHeight="175.0" fitWidth="389.0" layoutX="156.0" layoutY="180.0" pickOnBounds="true">
+            <ImageView fitHeight="183.0" fitWidth="494.0" layoutX="103.0" layoutY="174.0" pickOnBounds="true">
                <image>
                   <Image url="@../../media/Logo%20la%20Cucharita.PNG" />
                </image>
