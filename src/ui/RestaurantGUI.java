@@ -210,6 +210,7 @@ public class RestaurantGUI {
 	@FXML
     void exportData(ActionEvent event) throws FileNotFoundException, IOException {
 		inventory.saveIngredients();
+		laCucharita.saveEmployees();
 		printWarning("Information has been exported");
     }
 
@@ -217,6 +218,10 @@ public class RestaurantGUI {
     @FXML
     void importData(ActionEvent event) throws FileNotFoundException, ClassNotFoundException, IOException{
     	inventory.loadIngredients();
+<<<<<<< HEAD
+=======
+    	laCucharita.loadEmployees();
+>>>>>>> 21a3dff00df58ca009d712b641311681df9c255e
 
     	printWarning("The information has been imported");
 
@@ -897,7 +902,7 @@ public class RestaurantGUI {
 
     	
     	if (laCucharita.employeeExist(cc)){
-			printWarning("The ingredient you want to add already exists, try modifying its amount");
+			printWarning("La CC del empleado ya existe, por favor intente agregando una CC diferente");
 			
 		}else if(!id.getText().equals("") && !txtUserName.getText().equals("")  &&birthday.getValue()!=null  &&  !passwordField.getText().equals("")){
 
